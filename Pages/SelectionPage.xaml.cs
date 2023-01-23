@@ -32,7 +32,7 @@ namespace Animals.Pages
 
         private void btnparnocop_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.Frame.Navigate(new ParnocopPage());
+            MainWindow.Frame.Navigate(new AnimalsInfo());
 
         }
 

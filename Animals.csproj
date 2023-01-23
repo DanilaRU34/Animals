@@ -206,6 +206,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AnimalsInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DiatloPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -244,6 +248,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Animal.cs" />
+    <Compile Include="Models\Dech.cs" />
+    <Compile Include="Pages\AnimalsInfo.xaml.cs">
+      <DependentUpon>AnimalsInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DiatloPage.xaml.cs">
       <DependentUpon>DiatloPage.xaml</DependentUpon>
     </Compile>
