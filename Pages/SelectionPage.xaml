@@ -1,0 +1,106 @@
+﻿<Page x:Class="Animals.Pages.SelectionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Animals.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="SelectionPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <StackPanel Background="#FF84613B" Width="150" VerticalAlignment="Stretch">
+                <StackPanel VerticalAlignment="Top">
+                    <TextBlock Text="Животный мир Волгоградской области"
+                               FontSize="15"
+                               TextWrapping="Wrap"
+                               Padding="15"
+                               Foreground="White"/>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Bottom">
+                    <Button Content="Назад"
+                            Style="{StaticResource BackButton}"
+                            Click="Button_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Image Source="/Images/fox.jpg" Stretch="UniformToFill"/>
+
+            <StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Протяженность Волгоградской области свыше четырехсот километров, а протяженность ее границ превышает две тысячи километров. Обширная площадь области обладает чрезвычайным разнообразием мест в которых могут обитать различные животные."
+                               TextWrapping="Wrap"
+                               Padding="25 10 25 10"
+                               FontSize="18"
+                               Style="{StaticResource InfoBlock}"
+                               FontStyle="Italic"/>
+                    <TextBlock Text="Животный мир Волгограда и Волгоградской области включает свыше 15 тысяч видов беспозвоночных и около пятисот видов позвоночных. В них входят: млекопитающие, птицы, земноводные, пресмыкающиеся, костные рыбы, круглоротые, членистоногие, моллюски, мшанки, кольчатые черви."
+                               TextWrapping="Wrap"
+                               Padding="25 0 25 0"
+                               FontSize="18"
+                               FontStyle="Italic"
+                               Style="{StaticResource InfoBlock}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Width="850">
+                    <StackPanel Width="380" Margin="25 15 25 0">
+                        <Button x:Name="btnparnocop"
+                                Content="Отряд парнокопытные"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="btnparnocop_Click"/>
+                        <Button x:Name="BtnHishnoobrazn"
+                                Content="Отряд хищные"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="BtnHishnoobrazn_Click"/>
+                        <Button x:Name="Rykokrilie"
+                                Content="Отряд рукокрылые"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="Rykokrilie_Click"/>
+                        <Button x:Name="Nasekomozdn"
+                                Content="Отряд насекомоядные"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="Nasekomozdn_Click"/>
+                    </StackPanel>
+
+                    <StackPanel Width="380" Margin="0 15 0 0">
+                        <Button x:Name="Grizyn"
+                                Content="Отряд грызуны"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="Grizyn_Click"/>
+                        <Button x:Name="Vorobinoobrazn"
+                                Content="Отряд воробьинообразные"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="Vorobinoobrazn_Click"/>
+                        <Button x:Name="Diatlo"
+                                Content="Отряд дятлообразные"
+                                Height="60"
+                                Margin="0 0 0 5"
+                                Style="{StaticResource DetachmentButton}" 
+                                Click="Diatlo_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
